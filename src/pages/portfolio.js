@@ -6,6 +6,7 @@ import profilePhoto from '../images/profile-photo.jpeg'; // Import the image
 import { FaReact, FaNodeJs, FaAngular, FaPython } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiJavascript } from 'react-icons/si';
 import projectsData from '../json/projects.json'; // Import projects data from projects.js
+import Footer from '../components/footer/footer';
 
 
 const Portfolio = () => {
@@ -81,7 +82,11 @@ const Portfolio = () => {
           
           {/* Add more experience items as needed */}
         </div>
-        </div>
+      </div>
+
+      <div className='footer-all'>
+        <Footer />
+      </div>
       
       
     </div>
