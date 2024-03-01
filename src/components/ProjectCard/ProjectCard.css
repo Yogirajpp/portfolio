@@ -1,8 +1,9 @@
 /* BlogCard.css */
 .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f3f7; /* Light background color */
+    border-radius: 12px; /* Soften edges */
+    box-shadow: 2px 2px 10px #b8c0ca, 
+              -2px -2px 10px #ffffff; /* Neumorphism box shadow */
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -34,7 +35,7 @@
 .project-card-tag {
   margin-right: 5px;
   padding: 4px 8px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #333;
   border-radius: 4px;
   font-size: 14px;
@@ -42,20 +43,24 @@
   
 
   /* Styles for checkout button */
-.checkout-button {
-  display: block;
+.project-checkout-button {
+  display: inline-block;
   width: 100%;
-  padding: 5px;
-  background-color: #007bff;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: #e0e5ec; /* Button color */
+  color: #333; /* Text color */
   border: none;
-  border-radius: 4px;
+  border-radius: 8px; /* Soften edges */
   font-size: 16px;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: -2px -2px 10px #b8c0ca, 
+             -2px -2px 10px #ffffff;/* Neumorphism box shadow */
 }
 
-.checkout-button:hover {
-  background-color: #0056b3;
+.project-checkout-button:hover {
+  background-color: #c8d0da ;
+  box-shadow: 4px 4px 20px #b8c0ca, 
+             -4px -4px 20px #ffffff; /* Adjusted neumorphism box shadow on hover */
 }

@@ -15,7 +15,7 @@ const ProjectCard = ({ title, date, tags, imageUrl }) => {
           ))}
         </div>
         {/* Add checkout button */}
-        <button className="checkout-button">Checkout</button>
+        <button className="project-checkout-button">Checkout</button>
       </div>
     </div>
   );

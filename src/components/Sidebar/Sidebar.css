@@ -1,15 +1,20 @@
 /* Sidebar styles */
 .sidebar {
-  background-color: #1a1a1a; /* Dark background color */
+  background-color: #eaeff5; /* Light background color */
   width: 200px; /* Width of the sidebar */
   height: 100%; /* Full height */
   position: fixed; /* Fixed position */
+  margin-top: 5px;
+  margin-left: 5px;
   top: 0; /* Align to the top */
   left: 0; /* Align to the left */
   overflow-y: auto; /* Allow vertical scrolling */
   padding-top: 20px; /* Add some padding at the top */
-  color: #fff; /* Text color */
+  color: #333; /* Text color */
   font-family: Arial, sans-serif; /* Font family */
+  border-radius: 20px; /* Border radius for soft edges */
+  box-shadow: 5px 5px 15px #b8c0ca, 
+             -5px -5px 15px #ffffff; /* Neumorphism box shadow */
 }
 
 .sidebar ul {
@@ -23,7 +28,8 @@
 
 /* Styling for sidebar links */
 .sidebar a {
-  color: #fff; /* Text color for links */
+  font-size: 1.2rem;
+  color: #333; /* Text color for links */
   text-decoration: none; /* Remove underline from links */
   display: block; /* Display block to take full width */
   padding: 10px; /* Add padding around links */
@@ -31,10 +37,15 @@
 }
 
 .sidebar a:hover {
-  background-color: #333; /* Darker background color on hover */
+  background-color: #d3d9e3; /* Lighter background color on hover */
 }
 
 /* Active link style */
 .sidebar a.active {
-  background-color: #333; /* Darker background color for active link */
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #f0f3f7 ; /* Slightly darker background color for active link */
+  box-shadow: inset 2px 2px 5px #ffffff, 
+              inset -2px -2px 5px #b8c0ca; /* Neumorphism effect for active link */
 }
