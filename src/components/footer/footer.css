@@ -65,10 +65,16 @@
     width: 80px; /* Adjust button width for smaller screens */
     font-size: 12px;
   }
+
+  .footer-container {
+    margin-bottom: 80px;
+  }
+  
   .footer-redirect-container {
     flex-basis: 100%; /* Full width for small screens */
     max-width: 100%;
     text-align: center; /* Center align text for small screens */
+    
   }
   
   .button-qr-container {
