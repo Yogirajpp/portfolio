@@ -15,18 +15,18 @@
     "projectUrl": "https://express-motors.krushna53.com/"
   },
   {
+    "title": "Portfolio",
+    "description": "My personal portfolio website that showcases my projects and skills.",
+    "tags": ["React", "JavaScript", "Frontend"],
+    "imageUrl": "https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas.jpg",
+    "projectUrl": "https://portfolio-yogirajpps-projects.vercel.app/"
+  },
+  {
     "title": "Property Estate",
     "description": "A platform were anyone can buy and sell the property without brokers.",
     "tags": ["Drupal", "JavaScript", "CSS", "Frontend"],
     "imageUrl": "https://propertyestate.netlify.app/static/media/yariga.50e838bc0f04e94c4effa140d3467b5f.svg",
     "projectUrl": "https://propertyestate.netlify.app/"
-  },
-  {
-    "title": "Portfolio",
-    "description": "My personal portfolio website that showcases my projects and skills.",
-    "tags": ["React", "JavaScript", "Frontend"],
-    "imageUrl": "https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas.jpg",
-    "projectUrl": "https://example.com/learnhattan"
   },
   {
     "title": "Yugma Ventures",
