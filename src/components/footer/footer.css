@@ -58,3 +58,31 @@
     /* height: auto; */
   }
   
+
+  /* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .button {
+    width: 80px; /* Adjust button width for smaller screens */
+    font-size: 12px;
+  }
+  .footer-redirect-container {
+    flex-basis: 100%; /* Full width for small screens */
+    max-width: 100%;
+    text-align: center; /* Center align text for small screens */
+  }
+  
+  .button-qr-container {
+    flex-basis: 100%; /* Full width for small screens */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    gap: 15px; /* Add spacing between buttons */
+    align-items: center; /* Center align items for small screens */
+  }
+
+  .qr-code {
+    margin-top: 20px;
+    width: 200px;
+    /* height: auto; */
+  }
+}

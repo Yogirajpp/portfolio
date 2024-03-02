@@ -1,17 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBlogger, FaBriefcase, FaFolder, FaHandshake, FaEnvelope, FaFile } from 'react-icons/fa';
+import { FaBars, FaTimes, FaFolder, FaFile, FaBriefcase, FaBlogger, FaHandshake, FaEnvelope } from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar = () => {
   const [selectedLink, setSelectedLink] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleLinkClick = (link) => {
     setSelectedLink(link);
+    setSidebarOpen(false); // Close the sidebar when a link is clicked
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    checkIsMobile();
+
+    const handleResize = () => {
+      checkIsMobile();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className='sidebar'>
+    <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
+      {isMobile ? (
+        <div className="sidebar-toggle" onClick={toggleSidebar}>
+          {sidebarOpen ? <FaTimes /> : <FaBars />}
+        </div>
+      ) : null}
       <ul>
         <li>
           <Link 
@@ -19,7 +47,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Portfolio" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Portfolio")}
           >
-            <FaFolder /> Portfolio
+            {isMobile ? <FaFolder /> : <><FaFolder /> Portfolio</>}
           </Link>
         </li>
         <li>
@@ -28,7 +56,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Resume" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Resume")}
           >
-            <FaFile /> Resume
+            {isMobile ? <FaFile /> : <><FaFile /> Resume</>}
           </Link>
         </li>
         <li>
@@ -37,7 +65,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Projects" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Projects")}
           >
-            <FaBriefcase /> Projects
+            {isMobile ? <FaBriefcase /> : <><FaBriefcase /> Projects</>}
           </Link>
         </li>
         <li>
@@ -46,7 +74,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Blogs" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Blogs")}
           >
-            <FaBlogger /> Blogs
+            {isMobile ? <FaBlogger /> : <><FaBlogger /> Blogs</>}
           </Link>
         </li>
         <li>
@@ -55,7 +83,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Services" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Services")}
           >
-            <FaHandshake /> Services
+            {isMobile ? <FaHandshake /> : <><FaHandshake /> Services</>}
           </Link>
         </li>
         <li>
@@ -64,7 +92,7 @@ const Sidebar = () => {
             className={`sidebar-link ${selectedLink === "Contact" ? "active" : ""}`} 
             onClick={() => handleLinkClick("Contact")}
           >
-            <FaEnvelope /> Contact
+            {isMobile ? <FaEnvelope /> :  <><FaEnvelope /> Contact</>}
           </Link>
         </li>
       </ul>

@@ -12,3 +12,12 @@
              -5px -5px 15px #ffffff; /* Neumorphism box shadow */
   }
   
+
+  /* Media query for screens below 480px */
+  @media screen and (max-width: 480px) {
+    .projects {
+      margin-left: 10px; /* Adjust left margin */
+      margin-right: 10px; /* Adjust right margin */
+    }
+  }
+  

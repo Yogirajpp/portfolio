@@ -202,3 +202,28 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+
+
+/* Media query for screens below 480px */
+@media screen and (max-width: 480px) {
+  .portfolio-container {
+    margin-left: 10px; /* Remove left margin */
+    margin-right: 10px; /* Remove right margin */
+  }
+
+  .portfolio-header-info h2,
+  .portfolio-header-info p,
+  .portfolio-experience h3 {
+    font-size: 12px; /* Further decrease font size for small screens */
+  }
+
+  .portfolio-about-me h2,
+  .portfolio-about-me p {
+    font-size: 10px;
+  }
+
+  .portfolio-about-me {
+    margin-left: 0px; /* Adjust left margin */
+    margin-right: 0px; /* Adjust right margin */
+  }
+}
