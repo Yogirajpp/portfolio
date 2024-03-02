@@ -15,11 +15,20 @@ const Sidebar = () => {
       <ul>
         <li>
           <Link 
-            to="/Blogs" 
-            className={`sidebar-link ${selectedLink === "Blogs" ? "active" : ""}`} 
-            onClick={() => handleLinkClick("Blogs")}
+            to="/" 
+            className={`sidebar-link ${selectedLink === "Portfolio" ? "active" : ""}`} 
+            onClick={() => handleLinkClick("Portfolio")}
           >
-            <FaBlogger /> Blogs
+            <FaFolder /> Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link 
+            to="/Resume" 
+            className={`sidebar-link ${selectedLink === "Resume" ? "active" : ""}`} 
+            onClick={() => handleLinkClick("Resume")}
+          >
+            <FaFile /> Resume
           </Link>
         </li>
         <li>
@@ -33,11 +42,11 @@ const Sidebar = () => {
         </li>
         <li>
           <Link 
-            to="/Portfolio" 
-            className={`sidebar-link ${selectedLink === "Portfolio" ? "active" : ""}`} 
-            onClick={() => handleLinkClick("Portfolio")}
+            to="/Blogs" 
+            className={`sidebar-link ${selectedLink === "Blogs" ? "active" : ""}`} 
+            onClick={() => handleLinkClick("Blogs")}
           >
-            <FaFolder /> Portfolio
+            <FaBlogger /> Blogs
           </Link>
         </li>
         <li>
@@ -56,15 +65,6 @@ const Sidebar = () => {
             onClick={() => handleLinkClick("Contact")}
           >
             <FaEnvelope /> Contact
-          </Link>
-        </li>
-        <li>
-          <Link 
-            to="/Resume" 
-            className={`sidebar-link ${selectedLink === "Resume" ? "active" : ""}`} 
-            onClick={() => handleLinkClick("Resume")}
-          >
-            <FaFile /> Resume
           </Link>
         </li>
       </ul>

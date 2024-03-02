@@ -11,6 +11,7 @@ import Services from './pages/services';
 import Contact from './pages/contact';
 import Resume from './pages/resume';
 import Sidebar from './components/Sidebar/Sidebar';
+import Navbar from './components/Navbar/navbar';
 
 
 // Main App Component
@@ -19,12 +20,13 @@ const App = () => {
 
   return (
     <div className='App'>
+      <Navbar />
       <Sidebar/>
         <Routes>
           {/* Define your routes inside the Sidebar component */}
+          <Route path="/" element={<Portfolio />} />
           <Route path="/Blogs" element={<Blogs />} />
           <Route path="/Projects" element={<Projects />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Resume" element={<Resume />} />

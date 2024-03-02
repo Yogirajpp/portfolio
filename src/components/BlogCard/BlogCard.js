@@ -2,7 +2,7 @@
 import React from 'react';
 import './BlogCard.css';
 
-const BlogCard = ({ title, date, tags, imageUrl }) => {
+const BlogCard = ({ title, date, tags, imageUrl, blogUrl}) => {
   return (
     <div className="blog-card">
       <img src={imageUrl} alt={title} className="blog-card-image" />
@@ -15,7 +15,7 @@ const BlogCard = ({ title, date, tags, imageUrl }) => {
           ))}
         </div>
         {/* Add checkout button */}
-        <button className="blog-checkout-button">Checkout</button>
+        <a href={blogUrl} target="_blank" rel="noopener noreferrer" className="blog-checkout-button">Checkout</a>
       </div>
     </div>
   );

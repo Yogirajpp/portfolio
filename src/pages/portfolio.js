@@ -24,10 +24,16 @@ const Portfolio = () => {
         <div className="portfolio-about-me-image">
           <img src={profilePhoto} alt="" />
         </div>
-        <div className="portfolio-about-me-info">
-          <h2>Yogiraj Patil</h2>
-          <p>Hello, I'm Yogiraj Patil, a passionate full-stack web developer with a strong background in building dynamic and responsive web applications. With 2+ years of experience in the field, I have honed my skills in both front-end and back-end development, allowing me to create seamless user experiences and robust server-side architectures.</p>
+        <div className='portfolio-about-me-info-git'>
+          <div className="portfolio-about-me-info">
+            <h2>Yogiraj Patil</h2>
+            <p>Hello, I'm Yogiraj Patil, a passionate full-stack web developer with a strong background in building dynamic and responsive web applications. With 2+ years of experience in the field, I have honed my skills in both front-end and back-end development, allowing me to create seamless user experiences and robust server-side architectures.</p>
+          </div>
+          <div className='portfolio-github'>
+              <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=yogirajpp&" alt="yogirajpp" /></p>
+          </div>
         </div>
+        
       </div>
 
       <div className="portfolio-projects">

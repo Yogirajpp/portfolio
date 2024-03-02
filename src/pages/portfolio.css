@@ -12,6 +12,7 @@
 
 .portfolio-container {
   padding: 20px;
+  margin-top: 60px;
   margin-left: 220px;
   background-color: #e0e5ec; /* Background color */
   border-radius: 12px; /* Soften edges */
@@ -122,8 +123,12 @@
     border-radius: 10px; /* Rounded corners for the image */
   }
   
-  .portfolio-about-me-info {
+  .portfolio-about-me-info-git {
     flex-basis: 65%; /* Adjust the width percentage as needed */
+    
+  }
+
+  .portfolio-about-me-info {
     padding-left: 20px; /* Add some padding for separation */
   }
   
@@ -135,6 +140,16 @@
   .portfolio-about-me p {
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .portfolio-github {
+    margin-top: 20px; /* Add some space between "About Me" and GitHub section */
+  }
+
+  .portfolio-github img {
+      width: 100%; /* Ensure the GitHub streak stats image fills its container */
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 5px 5px 15px #b8c0ca, -5px -5px 15px #ffffff; /* Neumorphism box shadow */
   }
   
 

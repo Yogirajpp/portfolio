@@ -14,9 +14,10 @@ const Projects = () => {
         <ProjectCard
           key={index}
           title={project.title}
-          date={project.date}
+          description={project.description}
           tags={project.tags}
           imageUrl={project.imageUrl}
+          projectUrl={project.projectUrl}
         />
       ))}
     </div>
