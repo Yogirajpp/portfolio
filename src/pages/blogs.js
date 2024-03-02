@@ -6,6 +6,7 @@ import './blogs.css';
 const Blogs = () => {
   return (
     <div className="blogs">
+      <h2>Blogs</h2>
       {blogsData.map((blog, index) => (
         <BlogCard
           key={index}

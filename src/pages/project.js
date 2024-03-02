@@ -10,6 +10,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
+      <h2>Projects</h2>
       {projectsData.map((project, index) => (
         <ProjectCard
           key={index}
