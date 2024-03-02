@@ -211,6 +211,10 @@
     margin-right: 10px; /* Remove right margin */
   }
 
+  .portfolio-projects {
+    margin-left: -10px;
+  }
+
   .portfolio-header-info h2,
   .portfolio-header-info p,
   .portfolio-experience h3 {
@@ -225,6 +229,10 @@
   .portfolio-about-me {
     margin-left: 0px; /* Adjust left margin */
     margin-right: 0px; /* Adjust right margin */
+  }
+
+  .experience-item {
+    padding: 5px;
   }
 
   .experience-details {

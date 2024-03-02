@@ -16,7 +16,7 @@
 /* Media query for screens below 480px */
 @media screen and (max-width: 480px) {
   .blogs {
-    margin-left: 10px; /* Adjust left margin */
-    margin-right: 10px; /* Adjust right margin */
+    margin-left: 0px; /* Adjust left margin */
+    margin-right: 0px; /* Adjust right margin */
   }
 }
