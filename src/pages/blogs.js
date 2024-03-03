@@ -7,16 +7,18 @@ const Blogs = () => {
   return (
     <div className="blogs">
       <h2>Blogs</h2>
-      {blogsData.map((blog, index) => (
-        <BlogCard
-          key={index}
-          title={blog.title}
-          date={blog.date}
-          tags={blog.tags}
-          imageUrl={blog.imageUrl}
-          blogUrl={blog.blogUrl}
-        />
-      ))}
+      <div className='blogs-content'>
+        {blogsData.map((blog, index) => (
+          <BlogCard
+            key={index}
+            title={blog.title}
+            date={blog.date}
+            tags={blog.tags}
+            imageUrl={blog.imageUrl}
+            blogUrl={blog.blogUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 };

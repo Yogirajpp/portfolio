@@ -11,16 +11,18 @@ const Projects = () => {
   return (
     <div className="projects">
       <h2>Projects</h2>
-      {projectsData.map((project, index) => (
-        <ProjectCard
-          key={index}
-          title={project.title}
-          description={project.description}
-          tags={project.tags}
-          imageUrl={project.imageUrl}
-          projectUrl={project.projectUrl}
-        />
-      ))}
+      <div className='projects-content'>
+        {projectsData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            imageUrl={project.imageUrl}
+            projectUrl={project.projectUrl}
+          />
+        ))}
+      </div>
     </div>
   );
 };
