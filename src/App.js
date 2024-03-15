@@ -12,7 +12,7 @@ import Contact from './pages/contact';
 import Resume from './pages/resume';
 import Sidebar from './components/Sidebar/Sidebar';
 import Navbar from './components/Navbar/navbar';
-
+import { Analytics } from '@vercel/analytics/react';
 
 // Main App Component
 const App = () => {
@@ -31,6 +31,7 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Resume" element={<Resume />} />
         </Routes>
+        <Analytics />
       {/* </Sidebar> */}
     </div>
   );
